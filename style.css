@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#vendingMachine {
+    border: 2px solid black;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+
+    height: 80vh;
+    aspect-ratio: 3 / 4;
+}
+
+#items {
+    border: 2px solid black;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    img{
+        width: 100%;
+        height: 80%;
+        object-fit: contain;
+    }
+
+    >div{
+        aspect-ratio: 3 / 4;
+        overflow: hidden;
+    }
+}
+
+.controlPanel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#screen {
+    border: 2px solid black;
+    padding: 10px;
+    height: 50px;
+}
+
+#buttons {
+    border: 2px solid black;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    button{
+        aspect-ratio: 1 / 1;
+    }
+}
+
+#hole {
+    border: 2px solid black;
+    padding: 10px;
+    img{
+        width: 100%;
+        rotate: -90deg;
+    }
+}
